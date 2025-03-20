@@ -5,4 +5,11 @@
     extend: {},
   },
   plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        'custom-color': '#d5aaff',
+      },
+    },
+  }
 }

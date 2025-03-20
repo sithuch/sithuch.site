@@ -7,18 +7,107 @@
   <link href="./output.css" rel="stylesheet">
 
 </head>
-  <body class="flex bg-gray-100 max-w-5xl max-h-screen m-auto" >
-      <!-- <h1 class="text-3xl font-bold text-center mb-4">Hi I'm BackEnd Deverloper. I focus on backend development</h1>
-      <p class="text-lg text-gray-600">musics are helpful for me</p>
-      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=lCjjpV5BsTE&list=RD-vd07RdnCmY&index=21" frameborder="0" allowfullscreen></iframe>
-      </div> -->
-      <div class="flex w-full h-full m-auto shadow-sm bottom-1">
-        <div class="flex items-center justify-center ">Hello You</div>
+<body class="bg-gray-50 text-gray-800">
+  <!-- <div class="bg-[url('bg.webp')] bg-cover bg-center h-96 flex items-center justify-center w-full ">
+    <h1 class="text-4xl font-bold text-white">Welcome to My Portfolio</h1>
+</div> -->
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">CHHEM Sithuch</h1>
+      <ul class="flex space-x-6 text-gray-600">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ 
+  <header class="bg-gradient-to-tr from-gray-900 from-10% via-gray-500 via-50% to-gray-900 to-90% text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold">Hello, I'm CHHEM Sithuch</h2>
+      <p class="mt-4 text-lg">A back-end developer  with a passion for building scalable and efficient systems.</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">
+        Let's Connect
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
+      <p class="mt-4 text-gray-600">
+        I specialize in back-end development with a focus on creating efficient APIs, managing databases, 
+        and integrating modern technologies like Laravel, Node.js, and PostgreSQL.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
+          <span class="text-blue-600 font-bold">PHP</span>
         </div>
-        <div class="flex items-center justify-center ">
-          I Love You
+        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
+          <span class="text-blue-600 font-bold">Laravel</span>
+        </div>
+        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
+          <span class="text-blue-600 font-bold">Node.js</span>
+        </div>
+        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
+          <span class="text-blue-600 font-bold">PostgreSQL</span>
+        </div>
+        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
+          <span class="text-blue-600 font-bold">MySQL</span>
         </div>
       </div>
-  </body>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-blue-600">Project 1</h3>
+          <p class="mt-2 text-gray-600">Developed a high-performance API with Laravel and PostgreSQL.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-blue-600">Project 2</h3>
+          <p class="mt-2 text-gray-600">Built a data-driven application using Node.js and MySQL.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-bold text-blue-600">Project 3</h3>
+          <p class="mt-2 text-gray-600">Integrated modern Tailwind CSS designs for web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold">Contact Me</h2>
+      <p class="mt-4">I'm always eager to collaborate on exciting projects!</p>
+      <a href="mailto:[Your Email]" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-gray-400 text-center">
+    <p>&copy; 2025 CHHEM Sithuch. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
