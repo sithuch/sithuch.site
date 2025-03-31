@@ -1,15 +1,20 @@
- /** @type {import('tailwindcss').Config} */
- export default {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        'custom-color': '#d5aaff',
+        'laravel-pink': '#F05340',
+        'laravel-gray': '#6C6C6C',
+        'php-color':'#474A8A',
+        'javaScr-color':'yellow',
+        'html-color':'#ff5733',
+        'pg-color' :'#008bb9'
+        
       },
     },
-  }
+  },
+  plugins: [],
 }

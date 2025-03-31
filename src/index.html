@@ -1,110 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>👁</title>
-  <link href="./output.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- <div class="bg-[url('bg.webp')] bg-cover bg-center h-96 flex items-center justify-center w-full ">
-    <h1 class="text-4xl font-bold text-white">Welcome to My Portfolio</h1>
-</div> -->
+<!-- bg-gray-50 -->
+<body class=" scroll-smooth bg-slate-100">
 
   <!-- Navigation -->
-  <nav class="bg-white shadow-md">
+  <nav class="fixed top-0 left-0 w-full  text-white shadow-lg z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">CHHEM Sithuch</h1>
+      <h1 class="text-2xl font-bold text-blue-500 ">CHHEM Sithuch</h1>
       <ul class="flex space-x-6 text-gray-600">
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
-        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        <li><a href="#about" class="text-blue-500  font-semibold hover:text-white">About</a></li>
+        <li><a href="#skills" class="text-blue-500  font-semibold hover:text-white">Skills</a></li>
+        <li><a href="#projects" class="text-blue-500  font-semibold hover:text-white">Projects</a></li>
+        <li><a href="#contact" class="text-blue-500  font-semibold hover:text-white">Contact</a></li>
       </ul>
     </div>
-  </nav>
+</nav>
+
+<!-- Add some padding at the top so content is not hidden behind the navbar -->
+<div class="py-16">
+  <!-- Your website content goes here -->
+</div>
+
+
+
+  <div class="container mx-auto px-4 max-w-7xl">
+
+    <!-- <section class="min-h-[calc(80vh_-64px)] text-white flex flex-col items-center justify-center bg-gradient-to-b from-slate-200 to-black shadow-md mx-auto px-4  rounded-xl"> -->
+      <section class="min-h-[calc(80vh_-64px)] text-white flex flex-col items-center justify-center bg-black/80 shadow-md mx-auto px-4  rounded-xl">
+      <div class="flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold  ">HELLO, I'M CHHEM Sithuch</h2>
+          <p class="mt-4 text-lg">A back-end developer  with a passion for building scalable and efficient systems.</p>
+          <a href="#contact" class="mt-6 inline-block px-5 bg-gray-100 text-blue-600 py-3 rounded-full shadow-md hover:bg-gray-100">
+            Let's Connect
+          </a>
+        </div>
+        <div class="w-[300px] h-[300px] overflow-hidden rounded-full ">
+          <img src="./image/me.jpeg" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-tr from-green-500 to-gray-950">About Me</h2>
+        <H2 class="flex static text-l font-bold text-gray-700 font-sans mt-4 ">HEY,I'M SITHUCH!</H2>
+        <p class=" text-gray-500 text-justify mt-0">
+          I'm a Back-End Developer at TURBOTECH since 2022, specializing in building efficient, scalable, and secure APIs for web and mobile applications. I have strong experience working with SQL databases, including MySQL and PostgreSQL, where I design and manage databases by creating tables, stored procedures, triggers, roles, and permission grants. I'm also skilled in writing optimized queries to enhance performance and ensure data integrity.
+
+          Currently, I'm expanding my expertise into NoSQL databases like MongoDB, broadening my ability to work with diverse data architectures. Passionate about back-end development, I focus on crafting reliable and high-performance systems that power seamless user experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">Technical Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-php-color">
+            <!-- <span class="text-blue-600 font-bold">PHP</span> -->
+            <img class="pointer-events-none" src="./image/logo-php.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-laravel-pink">
+            <!-- <span class="text-blue-600 font-bold">Laravel</span> -->
+            <img class="pointer-events-none" src="./image/logo-laravel.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-green-500">
+            <!-- <span class="text-blue-600 font-bold">Node.js</span> -->
+            <img class="pointer-events-none" src="./image/logo-nodejs.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-sky-500">
+            <!-- <span class="text-blue-600 font-bold">PostgreSQL</span> -->
+            <img class="pointer-events-none" src="./image/logo-tailwind-css.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-javaScr-color">
+            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+            <img class="pointer-events-none" src="./image/logo-javascript.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-html-color">
+            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+            <img class="pointer-events-none" src="./image/logo-html5.svg" alt="" width="128" height="128">
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-green-400">
+            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+            <img class="pointer-events-none" src="./image/mysql.png" alt="" width="128" height="128">
+            
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-blue-400">
+            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+            <img class="pointer-events-none" src="./image/css.png" alt="" width="128" height="128">
+            
+          </div>
+          <div class="flex items-center justify-center bg-slate-100 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-pg-color">
+            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+            <img class="pointer-events-none" src="./image/postgre.png" alt="" width="128" height="128">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">Projects</h2>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h3 class="text-xl font-bold text-blue-600">Project 1</h3>
+            <p class="mt-2 text-gray-600">Developed a high-performance API with Laravel and PostgreSQL.</p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h3 class="text-xl font-bold text-blue-600">Project 2</h3>
+            <p class="mt-2 text-gray-600">Built a data-driven application using Node.js and MySQL.</p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h3 class="text-xl font-bold text-blue-600">Project 3</h3>
+            <p class="mt-2 text-gray-600">Integrated modern Tailwind CSS designs for web applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="flex mb-6 py-20 bg-black/80 p-10 text-white rounded-lg">
+      <div class="max-w-7xl mx-auto px-4 text-center m-4">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <p class="flex mt-4">I'm always eager to collaborate on exciting projects!</p>
+        <a href="mailto:[chhemsithuch1999@gmail.com]" class="mt-6 inline-block bg-white text-blue-600 px-5 py-3 rounded-full shadow-md hover:bg-gray-100">
+          Email Me
+        </a>
+      </div>
+    </section>
+  </div>
+
 
   <!-- Hero Section -->
  
-  <header class="bg-gradient-to-tr from-gray-950   via-blue-950 to-gray-950 p-10 text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold">Hello, I'm CHHEM Sithuch</h2>
-      <p class="mt-4 text-lg">A back-end developer  with a passion for building scalable and efficient systems.</p>
-      <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">
-        Let's Connect
-      </a>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-20">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-tr from-gray-950 via-blue-800 to-gray-950">About Me</h2>
-      <H2 class="flex static text-xl font-bold text-gray-600 font-sans mt-4 ">HEY,I'M SITHUCH!</H2>
-      <p class=" text-gray-600 text-justify mt-0">
-        I'm a Back-End Developer at TURBOTECH since 2022, specializing in building efficient, scalable, and secure APIs for web and mobile applications. I have strong experience working with SQL databases, including MySQL and PostgreSQL, where I design and manage databases by creating tables, stored procedures, triggers, roles, and permission grants. I'm also skilled in writing optimized queries to enhance performance and ensure data integrity.
-
-        Currently, I'm expanding my expertise into NoSQL databases like MongoDB, broadening my ability to work with diverse data architectures. Passionate about back-end development, I focus on crafting reliable and high-performance systems that power seamless user experiences.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-800 text-center">Technical Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
-          <span class="text-blue-600 font-bold">PHP</span>
-        </div>
-        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
-          <span class="text-blue-600 font-bold">Laravel</span>
-        </div>
-        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
-          <span class="text-blue-600 font-bold">Node.js</span>
-        </div>
-        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
-          <span class="text-blue-600 font-bold">PostgreSQL</span>
-        </div>
-        <div class="flex items-center justify-center bg-white p-6 shadow-lg rounded-lg">
-          <span class="text-blue-600 font-bold">MySQL</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-20">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-800 text-center">Projects</h2>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-        <div class="bg-white p-6 shadow-lg rounded-lg">
-          <h3 class="text-xl font-bold text-blue-600">Project 1</h3>
-          <p class="mt-2 text-gray-600">Developed a high-performance API with Laravel and PostgreSQL.</p>
-        </div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">
-          <h3 class="text-xl font-bold text-blue-600">Project 2</h3>
-          <p class="mt-2 text-gray-600">Built a data-driven application using Node.js and MySQL.</p>
-        </div>
-        <div class="bg-white p-6 shadow-lg rounded-lg">
-          <h3 class="text-xl font-bold text-blue-600">Project 3</h3>
-          <p class="mt-2 text-gray-600">Integrated modern Tailwind CSS designs for web applications.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gradient-to-tr from-gray-950   via-blue-950 to-gray-950 p-10 text-white">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold">Contact Me</h2>
-      <p class="mt-4">I'm always eager to collaborate on exciting projects!</p>
-      <a href="mailto:[Your Email]" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">
-        Email Me
-      </a>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="py-6 bg-gray-900 text-gray-400 text-center">
