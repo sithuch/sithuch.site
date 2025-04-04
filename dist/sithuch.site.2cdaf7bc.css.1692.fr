@@ -371,16 +371,36 @@ img, video {
   height: auto;
 }
 
+.min-h-\[calc\(\)\] {
+  min-height: calc();
+}
+
+.min-h-\[calc\(100vh_-64px\)\] {
+  min-height: calc(100vh - 64px);
+}
+
 .min-h-\[calc\(80vh_-64px\)\] {
   min-height: calc(80vh - 64px);
 }
 
-.w-52 {
-  width: 13rem;
+.w-\[250px\] {
+  width: 250px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .max-w-7xl {
@@ -413,10 +433,6 @@ img, video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -582,6 +598,11 @@ img, video {
   padding: 1.5rem;
 }
 
+.px-3 {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -615,6 +636,15 @@ img, video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-64 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.pt-\[min-h-\[calc\(80vh_-64px\)\]\] {
+  padding-top: min-h-[calc(80vh - 64px) ];
 }
 
 .text-center {
@@ -789,8 +819,24 @@ img, video {
 }
 
 @media (width >= 640px) {
-  .sm\:w-48 {
-    width: 12rem;
+  .sm\:w-60 {
+    width: 15rem;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
+  }
+
+  .sm\:w-56 {
+    width: 14rem;
+  }
+
+  .sm\:w-52 {
+    width: 13rem;
+  }
+
+  .sm\:min-w-56 {
+    min-width: 14rem;
   }
 
   .sm\:flex-row {
@@ -799,6 +845,26 @@ img, video {
 }
 
 @media (width >= 768px) {
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .md\:w-\[2300px\] {
+    width: 2300px;
+  }
+
+  .md\:w-\[230px\] {
+    width: 230px;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
+  }
+
   .md\:w-56 {
     width: 14rem;
   }
@@ -813,12 +879,30 @@ img, video {
 }
 
 @media (width >= 1024px) {
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[250px\] {
+    width: 250px;
+  }
+
   .lg\:w-64 {
     width: 16rem;
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 1280px) {
+  .xl\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .xl\:w-\[300px\] {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=sithuch.site.2cdaf7bc.css.map */
