@@ -11,7 +11,9 @@ module.exports = {
         'php-color':'#474A8A',
         'javaScr-color':'yellow',
         'html-color':'#ff5733',
-        'pg-color' :'#008bb9'
+        'pg-color' :'#008bb9',
+        'mysql-color' :'#00758F',
+         'css-color' :'#2ecc71'
         
       },
     },
