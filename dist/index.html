@@ -10,20 +10,20 @@
 
 </head>
 <!-- bg-gray-50 -->
-<body class=" scroll-smooth bg-slate-100">
+<body class="scroll-smooth bg-slate-100">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 w-full  text-gray-400 shadow-lg z-50  bg-white/30 backdrop-filter backdrop-blur-lg">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <nav class="fixed top-0 left-0 z-50 w-full text-gray-400 shadow-lg backdrop-filter backdrop-blur-lg bg-white/30">
+    <div class="flex justify-between items-center px-4 py-4 mx-auto max-w-7xl">
       <h1 class="text-2xl font-extrabold text-gray-700">
         <a href="#home" class="">
           C.TH<span class="text-blue-700">UCH</span>
         </a></h1>
       <ul class="flex space-x-6 text-black/80">
-        <li><a href="#about" class="text-gray-700 font-bold hover:text-gray-500">About</a></li>
-        <li><a href="#skills" class="text-gray-700 font-bold hover:text-gray-500">Skills</a></li>
-        <li><a href="#projects" class="text-gray-700 font-bold hover:text-gray-500">Projects</a></li>
-        <li><a href="#contact" class="text-gray-700 font-bold hover:text-gray-500">Contact</a></li>
+        <li><a href="#about" class="font-bold text-gray-700 hover:text-gray-500">About</a></li>
+        <li><a href="#skills" class="font-bold text-gray-700 hover:text-gray-500">Skills</a></li>
+        <li><a href="#projects" class="font-bold text-gray-700 hover:text-gray-500">Projects</a></li>
+        <li><a href="#contact" class="font-bold text-gray-700 hover:text-gray-500">Contact</a></li>
       </ul>
     </div>
 </nav>
@@ -33,30 +33,30 @@
   <!-- Your website content goes here -->
 </div>
 
-  <div class="container mx-auto px-4 max-w-7xl z-0">
+  <div class="container z-0 px-4 mx-auto max-w-7xl">
 
     <!-- <section class="min-h-[calc(80vh_-64px)] text-white flex flex-col items-center justify-center bg-gradient-to-b from-slate-200 to-black shadow-md mx-auto px-4  rounded-xl"> -->
       <section class="min-h-[calc(80vh_-64px)] text-white flex flex-col items-center justify-center mx-auto px-4 bg-gradient-to-r from-blue-600 via-blue-400  to-slate-200   rounded-lg shadow-lg ">
       <div class="flex justify-between items-center">
-        <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="px-4 mx-auto max-w-7xl text-center">
           <h2 class="text-xl font-extrabold text-gray-700 md:w-2xl lg:w-3xl xl:4xl">HELLO, <span class="font-extrabold text-blue-700">I'M SITHUCH</span> </h2>
           <p class="mt-4 text-lg text-black/60">A back-end developer  with a passion for building scalable and efficient systems.</p>
-          <a href="#contact" class="mt-6 inline-block px-5 bg-gray-100 text-blue-600 py-3 rounded-full shadow-md hover:bg-gray-200">
+          <a href="#contact" class="inline-block px-5 py-3 mt-6 text-blue-600 bg-gray-100 rounded-full shadow-md hover:bg-gray-200">
             Let's Connect
           </a>
         </div>
-        <div class="group relative w-52 sm:w-48 md:w-56 lg:w-64 xl:w-74 overflow-hidden rounded-full shadow-lg transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-blue-400">
-          <img src="/me.80feb05b.jpeg" alt="Profile Image" class="w-full h-auto aspect-square object-cover rounded-full border-4 border-blue-400 transition-all duration-500 group-hover:border-blue-500">
+        <div class="overflow-hidden relative w-52 rounded-full shadow-lg transition-all duration-500 ease-in-out group sm:w-48 md:w-56 lg:w-64 xl:w-74 hover:scale-110 hover:shadow-blue-400">
+          <img src="/me.80feb05b.jpeg" alt="Profile Image" class="object-cover w-full h-auto rounded-full border-4 border-blue-400 transition-all duration-500 aspect-square group-hover:border-blue-500">
         </div> 
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20">
-      <div class="max-w-7xl mx-auto px-4">
+      <div class="px-4 mx-auto max-w-7xl">
         <h2 class="text-3xl font-bold text-center text-black/70">About Me</h2>
-        <h2 class="flex static text-l font-bold text-gray-700 font-sans mt-4 ">HEY,I'M SITHUCH!</h2>
-        <p class=" text-gray-500 text-justify mt-0">
+        <h2 class="flex static mt-4 font-sans font-bold text-gray-700 text-l">HEY,I'M SITHUCH!</h2>
+        <p class="mt-0 text-justify text-gray-500">
           I'm a Back-End Developer at TURBOTECH since 2022, specializing in building efficient, scalable, and secure APIs for web and mobile applications. I have strong experience working with SQL databases, including MySQL and PostgreSQL, where I design and manage databases by creating tables, stored procedures, triggers, roles, and permission grants. I'm also skilled in writing optimized queries to enhance performance and ensure data integrity.
 
           Currently, I'm expanding my expertise into NoSQL databases like MongoDB, broadening my ability to work with diverse data architectures. Passionate about back-end development, I focus on crafting reliable and high-performance systems that power seamless user experiences.
@@ -66,45 +66,45 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-20">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-black/70 text-center">Technical Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-          <div class="flex items-center justify-center bg-php-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-php-color transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">PHP</span> -->
-            <img class="pointer-events-none " src="/logo-php.83594b04.svg" alt="" width="128" height="128">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 class="text-3xl font-bold text-center text-black/70">Technical Skills</h2>
+        <div class="grid grid-cols-2 gap-6 mt-8 md:grid-cols-4">
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-php-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-php-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">PHP</span> -->
+            <img class="pointer-events-none" src="/logo-php.83594b04.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-laravel-pink p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-laravel-pink  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">Laravel</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-laravel-pink shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-laravel-pink hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">Laravel</span> -->
             <img class="pointer-events-none" src="/logo-laravel.a04a7079.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-green-500 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-green-500  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">Node.js</span> -->
+          <div class="flex justify-center items-center p-6 bg-green-500 to-green-500 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform shadow-slate-300 hover:bg-gradient-to-b from-slate-200 hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">Node.js</span> -->
             <img class="pointer-events-none" src="/logo-nodejs.db585b48.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-sky-500 p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-sky-500  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">PostgreSQL</span> -->
+          <div class="flex justify-center items-center p-6 bg-sky-500 to-sky-500 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform shadow-slate-300 hover:bg-gradient-to-b from-slate-200 hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">PostgreSQL</span> -->
             <img class="pointer-events-none" src="/logo-tailwind-css.98ebdfd8.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-javaScr-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-javaScr-color  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-javaScr-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-javaScr-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">MySQL</span> -->
             <img class="pointer-events-none" src="/logo-javascript.c62d84cd.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-html-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-html-color  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-html-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-html-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">MySQL</span> -->
             <img class="pointer-events-none" src="/logo-html5.348684ac.svg" alt="" width="64" height="64">
           </div>
-          <div class="flex items-center justify-center bg-mysql-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-mysql-color  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-mysql-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-mysql-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">MySQL</span> -->
             <img class="pointer-events-none" src="/mysql.15a1d5d7.png" alt="" width="64" height="64">
             
           </div>
-          <div class="flex items-center justify-center bg-css-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-css-color  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-css-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-css-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">MySQL</span> -->
             <img class="pointer-events-none" src="/css.51cc78b7.png" alt="" width="64" height="64">
             
           </div>
-          <div class="flex items-center justify-center bg-pg-color p-6 opacity-50 shadow-lg shadow-slate-300 rounded-lg hover:bg-gradient-to-b from-slate-200 to-pg-color  transform hover:scale-105 transition duration-300 ease-in-out">
-            <!-- <span class="text-blue-600 font-bold">MySQL</span> -->
+          <div class="flex justify-center items-center p-6 rounded-lg shadow-lg opacity-50 transition duration-300 ease-in-out transform bg-pg-color shadow-slate-300 hover:bg-gradient-to-b from-slate-200 to-pg-color hover:scale-105">
+            <!-- <span class="font-bold text-blue-600">MySQL</span> -->
             <img class="pointer-events-none" src="/postgre.c34657b2.png" alt="" width="64" height="64">
             
           </div>
@@ -114,18 +114,18 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-20">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-black/70 text-center">Projects</h2>
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-          <div class="bg-white p-6 shadow-lg rounded-lg">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 class="text-3xl font-bold text-center text-black/70">Projects</h2>
+        <div class="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="p-6 bg-white rounded-lg shadow-lg">
             <h3 class="text-xl font-bold text-blue-600">Project 1</h3>
             <p class="mt-2 text-gray-600">Developed a high-performance API with Laravel and PostgreSQL.</p>
           </div>
-          <div class="bg-white p-6 shadow-lg rounded-lg">
+          <div class="p-6 bg-white rounded-lg shadow-lg">
             <h3 class="text-xl font-bold text-blue-600">Project 2</h3>
             <p class="mt-2 text-gray-600">Built a data-driven application using Node.js and MySQL.</p>
           </div>
-          <div class="bg-white p-6 shadow-lg rounded-lg">
+          <div class="p-6 bg-white rounded-lg shadow-lg">
             <h3 class="text-xl font-bold text-blue-600">Project 3</h3>
             <p class="mt-2 text-gray-600">Integrated modern Tailwind CSS designs for web applications.</p>
           </div>
@@ -134,13 +134,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="flex mb-6 py-20 p-10 text-gray-700 bg-gradient-to-r from-blue-600 to-slate-200 rounded-lg backdrop-blur-md shadow-lg">
-      <div class="max-w-7xl mx-auto px-4 text-center m-4">
+    <section id="contact" class="flex p-10 py-20 mb-6 text-gray-700 bg-gradient-to-r from-blue-600 rounded-lg shadow-lg backdrop-blur-md to-slate-200">
+      <div class="px-4 m-4 mx-auto max-w-7xl text-center">
         <h2 class="text-3xl font-bold">Contact Me</h2>
         <p class="flex mt-4">I'm always eager to collaborate on exciting projects!</p>
-        <a href="mailto:[chhemsithuch1999@gmail.com]" class="mt-6 inline-block bg-white text-blue-600 px-5 py-3 rounded-full shadow-md hover:bg-gray-100">
-          Email Me
-        </a>
+        <!-- <a href="mailto:[chhemsithuch1999@gmail.com]" class="inline-block px-5 py-3 mt-6 text-blue-600 bg-white rounded-full shadow-md hover:bg-gray-100">
+          Chat Me
+        </a> -->
+        
+        <button id="chatMe" class="inline-block px-5 py-3 mt-6 text-blue-600 bg-white rounded-full shadow-md hover:bg-gray-100">Chat Me</button>
       </div>
     </section>
   </div>
@@ -151,9 +153,61 @@
 
   <!-- Footer -->
   <!-- bg-gray-900 text-gray-400 text-center -->
-  <footer class="py-6  w-full  text-gray-400 shadow-lg z-50  text-center bg-white/30 backdrop-filter backdrop-blur-lg">
+  <footer class="z-50 py-6 w-full text-center text-gray-400 shadow-lg backdrop-filter backdrop-blur-lg bg-white/30">
     <p>&copy; 2025 CHHEM Sithuch. All rights reserved.</p>
   </footer>
+<!-- Button to trigger the modal -->
+<!-- <button id="openModal" class="px-4 py-2 text-white bg-blue-500 rounded">
+  Open Modal
+</button> -->
 
+<!-- Modal Structure -->
+<div id="overlay" class="fixed inset-0 invisible pointer-events-none bg-black/20">
+</div>
+
+<div id="myModal" class="flex fixed inset-0 top-1/2 left-1/2 z-50 flex-col justify-center items-center max-h-96 transition-transform duration-500 ease-in-out transform scale-0 -translate-x-1/2 -translate-y-1/2 max-w-96 insert-0">
+  <div class="flex object-cover overflow-hidden justify-center items-center mx-auto text-center bg-red-300">
+    <img src="/teleacc.d7c8cff3.jpg" alt="Image" class="flex object-cover object-center items-center w-full h-full" width="200" height="200">
+  </div>
+  <button id="closeModal" class="px-4 py-2 text-white bg-red-500 rounded">Close</button>
+</div>
 <script src="/sithuch.site.4e1dffad.js"></script></body>
 </html>
+
+<script>// Get modal elements
+const openModalButton = document.getElementById('chatMe');
+const closeModalButton = document.getElementById('closeModal');
+const modal = document.getElementById('myModal');
+const overlay = document.getElementById('overlay');
+const trigger = ()=>{
+    modal.classList.toggle('scale-110');
+    overlay.classList.toggle('invisible');
+    overlay.classList.toggle('pointer-events-auto');
+};
+openModalButton.addEventListener('click', trigger);
+overlay.addEventListener('click', trigger);
+closeModalButton.addEventListener('click', trigger);
+
+</script>
+<!-- <script>
+  // Get modal elements
+  const openModalButton = document.getElementById('chatMe');
+  const closeModalButton = document.getElementById('closeModal');
+  const modal = document.getElementById('myModal');
+
+
+
+  openModalButton.addEventListener('click', () => {
+    modal.classList.toggle('hidden');
+    modal.classList.toggle('flex'); 
+
+  });
+
+
+  // Close modal
+  closeModalButton.addEventListener('click', () => {
+    modal.classList.toggle('hidden');
+    modal.classList.toggle('flex');
+    
+  });
+</script> -->
