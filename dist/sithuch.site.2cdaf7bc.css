@@ -601,6 +601,10 @@ img, video {
   background-color: #ffffff4d;
 }
 
+.bg-white\/50 {
+  background-color: #ffffff80;
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
